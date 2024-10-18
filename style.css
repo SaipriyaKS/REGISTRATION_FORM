@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+.background {
+  background-image: url("./Main.jpg");
+  width: 100%;
+  height: 100vh;
+  background-position: center left;
+}
+
+.login {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  width: 400px;
+  padding: 20px;
+  background: transparent;
+  text-align: left;
+  margin-top: 50px;
+  border-radius: 10px;
+  z-index: 999;
+  opacity: 0.91;
+  box-shadow: 0px 0px 7px 0px purple;
+  backdrop-filter: blur(10px);
+  border: 1px solid white;
+}
+
+input {
+  outline: none;
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+  background: none;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+h1 {
+  padding-bottom: 40px;
+  color: black;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input::placeholder {
+  color: green;
+  font-size: 16px;
+}
+
+button {
+  background: none;
+  outline: none;
+  background: purple;
+  padding: 10px 40px;
+  font-size: 17px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+button:hover {
+  background: green;
+}
+
+.hidden {
+  display: none;
+}
+
+.text-time {
+  text-align: center;
+}
+
+.button {
+  align-items: center;
+  padding-left: 25%;
+}
+
+@media (max-width: 600px) {
+  .video {
+    opacity: 0.2; /* Slightly reduce opacity for better visibility */
+  }
+
+  .background {
+    background-image: url("Main.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .login-form {
+    width: 90%;
+    padding: 5%; /* Reduced padding for mobile */
+    margin-top: 20px; /* Reduced margin-top for mobile */
+  }
+
+  h1 {
+    font-size: 18px; /* Adjusted font size for heading */
+  }
+
+  button {
+    padding: 10px 20px; /* Reduced button size */
+	padding-left: 5%;
+    font-size: 15px; /* Adjusted font size */
+  }
+
+  input {
+    font-size: 14px; /* Adjusted font size for inputs */
+  }
+}
